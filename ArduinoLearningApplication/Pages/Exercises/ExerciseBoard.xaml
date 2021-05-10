@@ -1,0 +1,160 @@
+﻿<Page x:Class="ArduinoLearningApplication.Pages.Exercises.ExerciseBoard"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ArduinoLearningApplication.Pages.Exercises"
+      mc:Ignorable="d" 
+      MinHeight="500" MinWidth="1000"
+      Title="ExerciseBoard"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+      Background="{DynamicResource MaterialDesignPaper}"
+      TextElement.FontWeight="Medium"
+      TextElement.FontSize="14"
+      FontFamily="{materialDesign:MaterialDesignFont}">
+
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button x:Name="GoBackButton" 
+          Style="{StaticResource MaterialDesignRaisedButton}" Height="auto" Width="auto"
+          ToolTip="Exit Exercise" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="GoBackButton_Click">
+            <materialDesign:PackIcon Kind="ArrowLeft" Height="40" Width="40" />
+        </Button>
+        <Image HorizontalAlignment="Center" VerticalAlignment="Center" Height="400" Width="auto" Source="/ArduinoLearningApplication;component/Images/ArduinoBoard.png"/>
+        <ComboBox x:Name="ResetButtonCombo" Margin="-79,86,692,322" Width="auto"
+            materialDesign:HintAssist.Hint="Select Item">
+            <ComboBoxItem Content="Voltage Regulator" />
+            <ComboBoxItem Content="Digital Pins" />
+            <ComboBoxItem Content="Power Led Indicator" />
+            <ComboBoxItem Content="Reset Switch" />
+            <ComboBoxItem Content="USB Interface Chip" />
+            <ComboBoxItem Content="Power Port" />
+            <ComboBoxItem Content="Analog Input Pins" />
+            <ComboBoxItem Content="USB Connector" />
+            <ComboBoxItem Content="Crystal Oscillator" />
+            <ComboBoxItem Content="Microcontroller" />
+        </ComboBox>
+        <ComboBox x:Name="UsbInterfaceCombo" Margin="-79,180,692,228" Width="auto"
+            materialDesign:HintAssist.Hint="Select Item">
+            <ComboBoxItem Content="Voltage Regulator" />
+            <ComboBoxItem Content="Digital Pins" />
+            <ComboBoxItem Content="Power Led Indicator" />
+            <ComboBoxItem Content="Reset Switch" />
+            <ComboBoxItem Content="USB Interface Chip" />
+            <ComboBoxItem Content="Power Port" />
+            <ComboBoxItem Content="Analog Input Pins" />
+            <ComboBoxItem Content="USB Connector" />
+            <ComboBoxItem Content="Crystal Oscillator" />
+            <ComboBoxItem Content="Microcontroller" />
+        </ComboBox>
+        <ComboBox x:Name="UsbConnectorCombo" Margin="-79,150,692,258" Width="auto"
+            materialDesign:HintAssist.Hint="Select Item">
+            <ComboBoxItem Content="Voltage Regulator" />
+            <ComboBoxItem Content="Digital Pins" />
+            <ComboBoxItem Content="Power Led Indicator" />
+            <ComboBoxItem Content="Reset Switch" />
+            <ComboBoxItem Content="USB Interface Chip" />
+            <ComboBoxItem Content="Power Port" />
+            <ComboBoxItem Content="Analog Input Pins" />
+            <ComboBoxItem Content="USB Connector" />
+            <ComboBoxItem Content="Crystal Oscillator" />
+            <ComboBoxItem Content="Microcontroller" />
+        </ComboBox>
+        <ComboBox x:Name="CrystalOscillatorCombo" Margin="-79,212,692,196" Width="auto"
+            materialDesign:HintAssist.Hint="Select Item">
+            <ComboBoxItem Content="Voltage Regulator" />
+            <ComboBoxItem Content="Digital Pins" />
+            <ComboBoxItem Content="Power Led Indicator" />
+            <ComboBoxItem Content="Reset Switch" />
+            <ComboBoxItem Content="USB Interface Chip" />
+            <ComboBoxItem Content="Power Port" />
+            <ComboBoxItem Content="Analog Input Pins" />
+            <ComboBoxItem Content="USB Connector" />
+            <ComboBoxItem Content="Crystal Oscillator" />
+            <ComboBoxItem Content="Microcontroller" />
+        </ComboBox>
+        <ComboBox x:Name="VoltageRegulatorCombo" Margin="-79,252,692,156" Width="auto"
+            materialDesign:HintAssist.Hint="Select Item">
+            <ComboBoxItem Content="Voltage Regulator" />
+            <ComboBoxItem Content="Digital Pins" />
+            <ComboBoxItem Content="Power Led Indicator" />
+            <ComboBoxItem Content="Reset Switch" />
+            <ComboBoxItem Content="USB Interface Chip" />
+            <ComboBoxItem Content="Power Port" />
+            <ComboBoxItem Content="Analog Input Pins" />
+            <ComboBoxItem Content="USB Connector" />
+            <ComboBoxItem Content="Crystal Oscillator" />
+            <ComboBoxItem Content="Microcontroller" />
+        </ComboBox>
+        <ComboBox x:Name="PowerPortCombo" Margin="-79,305,692,103" Width="auto"
+            materialDesign:HintAssist.Hint="Select Item">
+            <ComboBoxItem Content="Voltage Regulator" />
+            <ComboBoxItem Content="Digital Pins" />
+            <ComboBoxItem Content="Power Led Indicator" />
+            <ComboBoxItem Content="Reset Switch" />
+            <ComboBoxItem Content="USB Interface Chip" />
+            <ComboBoxItem Content="Power Port" />
+            <ComboBoxItem Content="Analog Input Pins" />
+            <ComboBoxItem Content="USB Connector" />
+            <ComboBoxItem Content="Crystal Oscillator" />
+            <ComboBoxItem Content="Microcontroller" />
+        </ComboBox>
+        <ComboBox x:Name="PowerLedIndicatorCombo" Margin="660,154,-47,254" Width="auto"
+            materialDesign:HintAssist.Hint="Select Item">
+            <ComboBoxItem Content="Voltage Regulator" />
+            <ComboBoxItem Content="Digital Pins" />
+            <ComboBoxItem Content="Power Led Indicator" />
+            <ComboBoxItem Content="Reset Switch" />
+            <ComboBoxItem Content="USB Interface Chip" />
+            <ComboBoxItem Content="Power Port" />
+            <ComboBoxItem Content="Analog Input Pins" />
+            <ComboBoxItem Content="USB Connector" />
+            <ComboBoxItem Content="Crystal Oscillator" />
+            <ComboBoxItem Content="Microcontroller" />
+        </ComboBox>
+        <ComboBox x:Name="DigitalPinsCombo" Margin="660,78,-47,330" Width="auto"
+            materialDesign:HintAssist.Hint="Select Item">
+            <ComboBoxItem Content="Voltage Regulator" />
+            <ComboBoxItem Content="Digital Pins" />
+            <ComboBoxItem Content="Power Led Indicator" />
+            <ComboBoxItem Content="Reset Switch" />
+            <ComboBoxItem Content="USB Interface Chip" />
+            <ComboBoxItem Content="Power Port" />
+            <ComboBoxItem Content="Analog Input Pins" />
+            <ComboBoxItem Content="USB Connector" />
+            <ComboBoxItem Content="Crystal Oscillator" />
+            <ComboBoxItem Content="Microcontroller" />
+        </ComboBox>
+        <ComboBox x:Name="MicrocontrollerCombo" Margin="660,263,-47,145" Width="auto"
+            materialDesign:HintAssist.Hint="Select Item">
+            <ComboBoxItem Content="Voltage Regulator" />
+            <ComboBoxItem Content="Digital Pins" />
+            <ComboBoxItem Content="Power Led Indicator" />
+            <ComboBoxItem Content="Reset Switch" />
+            <ComboBoxItem Content="USB Interface Chip" />
+            <ComboBoxItem Content="Power Port" />
+            <ComboBoxItem Content="Analog Input Pins" />
+            <ComboBoxItem Content="USB Connector" />
+            <ComboBoxItem Content="Crystal Oscillator" />
+            <ComboBoxItem Content="Microcontroller" />
+        </ComboBox>
+        <ComboBox x:Name="AnalogInputPinsCombo" Margin="660,333,-47,75" Width="auto"
+            materialDesign:HintAssist.Hint="Select Item">
+            <ComboBoxItem Content="Voltage Regulator" />
+            <ComboBoxItem Content="Digital Pins" />
+            <ComboBoxItem Content="Power Led Indicator" />
+            <ComboBoxItem Content="Reset Switch" />
+            <ComboBoxItem Content="USB Interface Chip" />
+            <ComboBoxItem Content="Power Port" />
+            <ComboBoxItem Content="Analog Input Pins" />
+            <ComboBoxItem Content="USB Connector" />
+            <ComboBoxItem Content="Crystal Oscillator" />
+            <ComboBoxItem Content="Microcontroller" />
+        </ComboBox>
+        <Button x:Name="SubmitAnswer" Content="Submit the answers" Style="{StaticResource MaterialDesignRaisedButton}"
+                HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Margin="300,379,300,-11" Click="SubmitAnswer_Click"/>
+        <TextBlock Style="{StaticResource MaterialDesignSubtitle1TextBlock}" Text="This is an Arduino UNO mictocontroller board. Match each component to its appropriate name." HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,48,0,362"/>
+        <TextBlock Style="{StaticResource MaterialDesignHeadline3TextBlock}" Text="Identifying the Board" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="177,-7,177,383" />
+        <TextBlock x:Name="FeedbackText" HorizontalAlignment="Center" Margin="0,374,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Visibility="Hidden" Foreground="Red"/>
+    </Grid>
+</Page>
